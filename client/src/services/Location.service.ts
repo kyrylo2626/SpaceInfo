@@ -6,7 +6,9 @@ class LocationService {
 
     private URL = import.meta.env.VITE_LOCATION;
 
-    async getLocation() { return axios.get<ILocation>(this.URL).then(response => console.log(response)).catch(error => console.error(error)) }
+    async getLocation() { const res = axios.get<ILocation>(this.URL);
+                        res.then(response => console.log(response)).catch(error => console.error(error));
+                        return res}
 
 }
 
