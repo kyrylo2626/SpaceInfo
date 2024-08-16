@@ -11,6 +11,9 @@ export default function Location() {
         const intervalLocation = setInterval(() => { getLocation.refetch() }, 5000);
         return () => clearInterval(intervalLocation);
     }, []);
+
+    console.log(getLocation)
+    console.log(import.meta.env.VITE_LOCATION)
     
     return (
         <div className='loaction'>
