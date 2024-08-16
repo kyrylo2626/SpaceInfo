@@ -1,0 +1,27 @@
+.crew-card {
+    width: 91%;
+    height: 12%;
+    border-radius: 10px;
+    border: 2px solid #b3b3b3;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    font-size: 14pt;
+}
+
+.icon-person-box {
+    height: 90%;
+    aspect-ratio: 1/1;
+    border: 2px #0B3D91 solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0B3D91;
+}
+
+.icon-person {
+    font-size: 20pt;
+    color: white;
+}
