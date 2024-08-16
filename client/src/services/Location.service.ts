@@ -4,7 +4,7 @@ import { ILocation } from '../interfaces/Location.interface'
 
 class LocationService {
 
-    private URL = 'http://api.open-notify.org/iss-now.json';
+    private URL = import.meta.env.VITE_LOCATION;
 
     async getLocation() { return axios.get<ILocation>(this.URL) }
 
